@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallab Banerjee — Portfolio</title>
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo">PB</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-grid section-inner">
+    <div class="hero-left fade-in">
+      <div class="hero-label">Available for Internships</div>
+      <h1>PALLAB<br><span>BANERJEE</span></h1>
+      <div class="hero-subtitle">CSE Undergraduate & ML Enthusiast</div>
+      <p class="hero-desc">
+        Computer Science & Engineering student at Techno India University with a 9.1 GPA. 
+        Building intelligent systems, exploring data, and crafting efficient software solutions.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-right fade-in">
+      <div class="stat-row">
+        <div class="stat-card">
+          <div class="stat-num">9.1</div>
+          <div class="stat-label">GPA</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">35</div>
+          <div class="stat-label">Team Led</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">88<small style="font-size:1.2rem">%</small></div>
+        <div class="stat-label">ML Model Accuracy — Heart Disease Predictor</div>
+      </div>
+      <div class="stat-card" style="padding:1.2rem 1.5rem; display:flex; align-items:center; gap:1rem;">
+        <div style="width:8px;height:8px;background:var(--accent);border-radius:50%;animation:pulse 1.5s infinite;"></div>
+        <div>
+          <div style="font-size:0.72rem;color:var(--text)">B.Tech 3rd Year</div>
+          <div style="font-size:0.65rem;color:var(--muted);margin-top:0.2rem">Techno India University, WB</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker" id="ticker">
+    <div class="ticker-item"><span>C++</span> Python</div>
+    <div class="ticker-item">● Machine Learning</div>
+    <div class="ticker-item"><span>SQL</span> PostgreSQL</div>
+    <div class="ticker-item">● Data Science</div>
+    <div class="ticker-item"><span>Scikit-Learn</span> Pandas</div>
+    <div class="ticker-item">● System Design</div>
+    <div class="ticker-item"><span>ACM</span> Vice Chairperson</div>
+    <div class="ticker-item">● DSA & OOP</div>
+    <!-- duplicate for loop -->
+    <div class="ticker-item"><span>C++</span> Python</div>
+    <div class="ticker-item">● Machine Learning</div>
+    <div class="ticker-item"><span>SQL</span> PostgreSQL</div>
+    <div class="ticker-item">● Data Science</div>
+    <div class="ticker-item"><span>Scikit-Learn</span> Pandas</div>
+    <div class="ticker-item">● System Design</div>
+    <div class="ticker-item"><span>ACM</span> Vice Chairperson</div>
+    <div class="ticker-item">● DSA & OOP</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <!-- <span class="section-num">01</span> -->
+      <h2>About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-left fade-in">
+        <p class="about-bio">
+          I'm <strong>Pallab Banerjee</strong>, a B.Tech Computer Science & Engineering undergraduate 
+          at Techno India University, West Bengal — currently in my 3rd year with a 
+          <strong>9.1 GPA</strong>.
+        </p>
+        <p class="about-bio">
+          My passion lies in <strong>machine learning</strong>, data-driven systems, and writing 
+          clean, efficient code. I enjoy turning raw datasets into actionable insights and 
+          building predictive models that solve real problems.
+        </p>
+        <p class="about-bio">
+          Beyond academics, I serve as <strong>Vice Chairperson</strong> of the TIUWB ACM Student Chapter, 
+          where I lead a 35-member team to foster technical culture through workshops and coding events.
+        </p>
+
+        <h3 style="font-family:'Syne',sans-serif;font-size:0.9rem;font-weight:700;color:var(--muted);letter-spacing:0.12em;text-transform:uppercase;margin:2rem 0 1.2rem;">Education</h3>
+        <div class="edu-item">
+          <div class="edu-school">Techno India University, West Bengal</div>
+          <div class="edu-degree">B.Tech in Computer Science & Engineering · 2023 – Present</div>
+          <span class="edu-score">GPA: 9.1 / 10</span>
+        </div>
+        <div class="edu-item">
+          <div class="edu-school">Jharia Sri Ramkrishna Vidyapith (HS)</div>
+          <div class="edu-degree">Higher Secondary · 2020 – 2022</div>
+          <span class="edu-score">Score: 92%</span>
+        </div>
+      </div>
+
+      <div class="about-right fade-in">
+        <img src="./images/my-photo.jpg" alt="Pallab Banerjee" class="about-photo">
+        <div class="info-row"><span class="info-key">Name</span><span class="info-val">Pallab Banerjee</span></div>
+        <div class="info-row"><span class="info-key">Email</span><span class="info-val">pallabbanerjee2003@gmail.com</span></div>
+        <div class="info-row"><span class="info-key">Phone</span><span class="info-val">+91 8637577510</span></div>
+        <div class="info-row"><span class="info-key">Location</span><span class="info-val">Kolkata, India</span></div>
+        <div class="info-row"><span class="info-key">Degree</span><span class="info-val">B.Tech CSE (3rd Year)</span></div>
+        <div class="info-row"><span class="info-key">Status</span><span class="info-val" style="color:var(--accent)">Open to Internships</span></div>
+        <div class="info-row">
+          <span class="info-key">Languages</span>
+          <span class="info-val">
+            <div class="lang-tags">
+              <span class="lang-tag">Bengali (Native)</span>
+              <span class="lang-tag">English (Pro)</span>
+              <span class="lang-tag">Hindi (Pro)</span>
+            </div>
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Links</span>
+          <span class="info-val">
+            <div class="lang-tags">
+              <a href="https://www.linkedin.com/in/pallab-banerjee003/" target="_blank" class="lang-tag" style="text-decoration:none;color:var(--muted);transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">LinkedIn ↗</a>
+              <a href="https://github.com/banerjee003" target="_blank" class="lang-tag" style="text-decoration:none;color:var(--muted);transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">GitHub ↗</a>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <!-- <span class="section-num">02</span> -->
+      <h2>Technical Skills</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group fade-in">
+        <div class="skill-group-title">Programming Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group fade-in">
+        <div class="skill-group-title">Data Science & ML</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Data Preprocessing</span>
+          <span class="skill-tag">EDA</span>
+          <span class="skill-tag">Feature Engineering</span>
+          <span class="skill-tag">Model Evaluation</span>
+        </div>
+      </div>
+      <div class="skill-group fade-in">
+        <div class="skill-group-title">Libraries & Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">Matplotlib</span>
+          <span class="skill-tag">Seaborn</span>
+          <span class="skill-tag">Scikit-Learn</span>
+          <span class="skill-tag">Jupyter</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+        </div>
+      </div>
+      <div class="skill-group fade-in">
+        <div class="skill-group-title">Databases</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MS SQL Server</span>
+          <span class="skill-tag">PGAdmin</span>
+        </div>
+      </div>
+      <div class="skill-group fade-in">
+        <div class="skill-group-title">Testing & Debugging</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Debugging</span>
+          <span class="skill-tag">Code Optimization</span>
+          <span class="skill-tag">Testing & Validation</span>
+          <span class="skill-tag">Troubleshooting</span>
+        </div>
+      </div>
+      <div class="skill-group fade-in">
+        <div class="skill-group-title">Core Concepts</div>
+        <div class="skill-tags">
+          <span class="skill-tag">DSA</span>
+          <span class="skill-tag">OOP</span>
+          <span class="skill-tag">SDLC</span>
+          <span class="skill-tag">System Design</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <!-- <span class="section-num">03</span> -->
+      <h2>Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card fade-in">
+        <div class="project-num">01</div>
+        <div class="project-name">Heart Disease<br>Predictor</div>
+        <p class="project-desc">
+          Developed a machine learning model using Python and Scikit-learn to predict heart disease risk. 
+          Performed comprehensive data preprocessing, feature engineering, and model evaluation — 
+          achieving ~88% accuracy. Deployed as a fully interactive web application.
+        </p>
+        <div class="project-tech">
+          <span class="project-tech-tag">Python</span>
+          <span class="project-tech-tag">Scikit-Learn</span>
+          <span class="project-tech-tag">Pandas</span>
+          <span class="project-tech-tag">ML</span>
+          <span class="project-tech-tag">Web App</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/banerjee003/Heart-Disease-Predictor" target="_blank" class="project-link">GitHub ↗</a>
+          <a href="https://pallab-heart-disease-predictor.streamlit.app/" target="_blank" class="project-link">Live App ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-num">02</div>
+        <div class="project-name">UCL Data<br>Analysis</div>
+        <p class="project-desc">
+          Built a data analysis pipeline using Python, Pandas, and Matplotlib to clean, process, 
+          and visualize UCL (UEFA Champions League) datasets. Performed exploratory data analysis 
+          to surface trends, performance patterns, and actionable insights.Identifying the core metrics that define European championship success.
+        </p>
+        <div class="project-tech">
+          <span class="project-tech-tag">Python</span>
+          <span class="project-tech-tag">Pandas</span>
+          <span class="project-tech-tag">Matplotlib</span>
+          <span class="project-tech-tag">EDA</span>
+          <span class="project-tech-tag">Data Visualization</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/banerjee003/UCL-Data-Analysis" target="_blank" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <!-- <span class="section-num">04</span> -->
+      <h2>Achievements & Certifications</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="achievements-grid">
+      <div class="achieve-card fade-in">
+        <div class="achieve-icon">🎓</div>
+        <div>
+          <div class="achieve-title">Python Basics</div>
+          <div class="achieve-sub">Certified by NPTEL (IIT Madras), 2024.<br>Scored 75% — government-recognized certification from India's premier technical institute.</div>
+          <span class="achieve-badge">NPTEL · IIT Madras · 2024</span>
+          <a href="https://drive.google.com/file/d/1YLwRjO8oIXsLrYrYm3OiQfV0ZFYevk-i/view?usp=drive_link" target="_blank" class="credential-link">View Credential →</a>
+        </div>
+      </div>
+      <div class="achieve-card fade-in">
+        <div class="achieve-icon">🤖</div>
+        <div>
+          <div class="achieve-title">AI/ML Basics</div>
+          <div class="achieve-sub">Certified by Google, 2025. Covers foundational AI and machine learning concepts from one of the world's leading tech companies.</div>
+          <span class="achieve-badge">Google · 2025</span>
+          <a href="https://drive.google.com/file/d/1506FuqFigsyXbozFnYV8JJCyEHwD2Oef/view?usp=drive_link" target="_blank" class="credential-link">View Credential →</a>
+        </div>
+      </div>
+      <div class="achieve-card fade-in">
+        <div class="achieve-icon">🏆</div>
+        <div>
+          <div class="achieve-title">9.1 GPA</div>
+          <div class="achieve-sub">Maintained a consistently high GPA of 9.1/10 across semesters at Techno India University in B.Tech CSE.</div>
+          <span class="achieve-badge">Techno India University</span>
+        </div>
+      </div>
+      <div class="achieve-card fade-in">
+        <div class="achieve-icon">📈</div>
+        <div>
+          <div class="achieve-title">92% in Higher Secondary</div>
+          <div class="achieve-sub">Scored 92% in Higher Secondary (Class 12) from Jharia Sri Ramkrishna Vidyapith, demonstrating strong academic fundamentals.</div>
+          <span class="achieve-badge">JSRKV · 2022</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <!-- <span class="section-num">05</span> -->
+      <h2>Experience</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="exp-card fade-in">
+      <div>
+        <div class="exp-role">Vice Chairperson</div>
+        <div class="exp-org">TIUWB ACM Student Chapter</div>
+        <div class="exp-date">Dec 2024 – Dec 2025</div>
+        <p class="exp-desc">
+          Led a team of 35 members to organize technical workshops and coding events, 
+          increasing student participation and engagement within the ACM student chapter 
+          at Techno India University.
+        </p>
+      </div>
+      <div>
+        <br>
+        <h4 style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem;">Key Contributions</h4>
+        <div style="display:flex;flex-direction:column;gap:0.8rem;">
+          <div style="display:flex;gap:1rem;align-items:flex-start;font-size:0.78rem;color:#8a8880;">
+            <span style="color:var(--accent);flex-shrink:0;">→</span>
+            Organized technical workshops & coding competitions
+          </div>
+          <div style="display:flex;gap:1rem;align-items:flex-start;font-size:0.78rem;color:#8a8880;">
+            <span style="color:var(--accent);flex-shrink:0;">→</span>
+            Led and mentored a 35-member student team
+          </div>
+          <div style="display:flex;gap:1rem;align-items:flex-start;font-size:0.78rem;color:#8a8880;">
+            <span style="color:var(--accent);flex-shrink:0;">→</span>
+            Boosted student engagement within the chapter
+          </div>
+          <div style="display:flex;gap:1rem;align-items:flex-start;font-size:0.78rem;color:#8a8880;">
+            <span style="color:var(--accent);flex-shrink:0;">→</span>
+            Represented the university at ACM-related events
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <!-- <span class="section-num">06</span> -->
+      <h2>Contact</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <p style="font-size:0.85rem;line-height:1.9;color:#8a8880;margin-bottom:1rem;">
+          I'm currently open to internship opportunities, collaborative projects, 
+          and interesting conversations about ML, data, and software engineering. 
+          Feel free to reach out!
+        </p>
+        <a href="mailto:pallabbanerjee2003@gmail.com" class="contact-item">
+          <div class="contact-icon">✉</div>
+          pallabbanerjee2003@gmail.com
+        </a>
+        <a href="tel:+918637577510" class="contact-item">
+          <div class="contact-icon">☎</div>
+          +91 8637577510
+        </a>
+        <a href="https://www.linkedin.com/in/pallab-banerjee003/" target="_blank" class="contact-item">
+          <div class="contact-icon">
+            <img src="./images/linkedin.svg" alt="in">
+          </div>
+          LinkedIn Profile
+        </a>
+        <a href="https://github.com/banerjee003" target="_blank" class="contact-item">
+          <div class="contact-icon" style="font-size:0.75rem">
+            <img src="./images/github.svg" alt="GH">
+          </div>
+          GitHub Profile
+        </a>
+      </div>
+
+      <div class="fade-in">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/pallabbanerjee2003@gmail.com" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New portfolio contact form message">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name</label>
+            <input class="form-input" id="name" name="name" type="text" placeholder="John Doe">
+            <span class="error-msg" id="nameErr">Please enter your name.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-input" id="email" name="email" type="email" placeholder="john@example.com">
+            <span class="error-msg" id="emailErr">Please enter a valid email address.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <input class="form-input" id="subject" name="subject" type="text" placeholder="Internship Opportunity">
+            <span class="error-msg" id="subjectErr">Please enter a subject.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="Tell me about the opportunity..."></textarea>
+            <span class="error-msg" id="messageErr">Please enter a message (min 20 characters).</span>
+          </div>
+          <button type="submit" class="form-submit">Send Message →</button>
+          <div class="form-success" id="formSuccess">
+            ✓ Message sent successfully! I'll get back to you soon.
+          </div>
+          <div class="form-error" id="formError">
+            Something went wrong. Please try again or email me directly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2025 <span>Pallab Banerjee</span> — All rights reserved</div>
+  <div>Built with HTML · CSS · JavaScript</div>
+  <div>Kolkata, India <span>●</span> Open to Opportunities</div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
