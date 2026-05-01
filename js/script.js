@@ -93,9 +93,37 @@ document.querySelectorAll('.form-input, .form-textarea').forEach(el => {
 });
 
 // Nav active state
+const nav = document.querySelector('nav');
+const tickerWrap = document.querySelector('.ticker-wrap');
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
+let lastScrollY = window.scrollY;
+let navOffset = 0;
+
 window.addEventListener('scroll', () => {
+  const currentScrollY = window.scrollY;
+  const tickerStart = tickerWrap.offsetTop - nav.offsetHeight;
+  const tickerEnd = tickerWrap.offsetTop + tickerWrap.offsetHeight;
+  const isScrollingUp = currentScrollY < lastScrollY;
+
+  if (currentScrollY < tickerStart) {
+    navOffset = 0;
+    nav.style.transition = 'none';
+  } else if (currentScrollY < tickerEnd) {
+    navOffset = currentScrollY - tickerStart;
+    navOffset = Math.max(0, Math.min(navOffset, nav.offsetHeight));
+    nav.style.transition = 'none';
+  } else if (isScrollingUp) {
+    navOffset = 0;
+    nav.style.transition = 'transform 0.5s ease';
+  } else {
+    navOffset = nav.offsetHeight;
+    nav.style.transition = 'transform 0.5s ease';
+  }
+
+  nav.style.transform = `translateY(-${navOffset}px)`;
+  lastScrollY = currentScrollY;
+
   let current = '';
   sections.forEach(s => {
     if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id');

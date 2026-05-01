@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Pallab Banerjee</title>
+<link rel="icon" href="./images/favicon.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/projects.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">PB</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="index.html#achievements">Achievements</a></li>
+    <li><a href="index.html#experience">Experience</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-inner">
+    <div class="page-hero-label">Portfolio</div>
+    <h1>MY<br><em>Projects</em></h1>
+    <div class="page-hero-meta">
+      <div>Total <span>2 Projects</span></div>
+      <div>Focus <span>ML · Data Science</span></div>
+      <div>Stack <span>Python · Scikit-Learn · SQL</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+  <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+  <button class="filter-btn" data-filter="python">Python</button>
+  <button class="filter-btn" data-filter="deployed">Deployed</button>
+</div>
+
+<!-- MAIN -->
+<main>
+  <div class="results-count">Showing <span id="countNum">2</span> projects</div>
+
+  <div class="projects-list" id="projectsList">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card fade-in" data-tags="machine-learning python deployed">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-num">01</div>
+        <div class="card-title-group">
+          <div class="card-title">Heart Disease Predictor</div>
+          <div class="card-tags">
+            <span class="card-tag">Machine Learning</span>
+            <span class="card-tag">Python</span>
+            <span class="card-tag">Scikit-Learn</span>
+            <span class="card-tag">Deployed</span>
+          </div>
+        </div>
+        <div class="card-toggle">+</div>
+      </div>
+      <div class="card-body">
+        <div class="card-body-inner">
+
+          <!-- LEFT: Details + Description + Links -->
+          <div>
+            <div class="status-badge live">Live & Deployed</div>
+
+            <div class="card-stats">
+              <div class="card-stat">
+                <div class="card-stat-num">~88%</div>
+                <div class="card-stat-label">Accuracy</div>
+              </div>
+              <div class="card-stat">
+                <div class="card-stat-num">13</div>
+                <div class="card-stat-label">Features Used</div>
+              </div>
+              <div class="card-stat">
+                <div class="card-stat-num">Web</div>
+                <div class="card-stat-label">Deployed As</div>
+              </div>
+            </div>
+
+            <div class="card-section-label">Project Description</div>
+            <p class="card-desc">
+              Developed a <strong>machine learning model</strong> to predict the risk of heart disease 
+              in patients based on clinical features. The project involved the full ML pipeline — from 
+              raw data ingestion all the way to a deployed interactive web application.
+            </p>
+            <p class="card-desc">
+              Leveraged the Cleveland Heart Disease dataset with <strong>13 clinical features</strong> 
+              including age, cholesterol, resting blood pressure, and ECG results. Applied multiple 
+              classification algorithms and selected the best-performing model achieving 
+              <strong>~88% accuracy</strong>.
+            </p>
+
+            <div class="card-section-label">Key Highlights</div>
+            <div class="highlight-list">
+              <div class="highlight-item">Full ML pipeline: data ingestion → preprocessing → modeling → deployment</div>
+              <div class="highlight-item">Feature engineering and selection from 13 clinical attributes</div>
+              <div class="highlight-item">Data preprocessing: handling missing values, normalization, encoding</div>
+              <div class="highlight-item">Evaluated multiple classifiers — Logistic Regression, Random Forest, SVM</div>
+              <div class="highlight-item">Achieved ~88% accuracy on test set with cross-validation</div>
+              <div class="highlight-item">Deployed as an interactive web app for real-time prediction</div>
+            </div>
+
+            <div class="card-links">
+              <a href="https://github.com" target="_blank" class="card-link card-link-primary">GitHub ↗</a>
+              <a href="#" target="_blank" class="card-link card-link-outline">Live App ↗</a>
+            </div>
+          </div>
+
+          <!-- RIGHT: Tech Stack -->
+          <div class="tech-stack">
+            <div class="card-section-label">Technical Stack</div>
+
+            <div class="tech-category">
+              <div class="tech-category-name">Language</div>
+              <div class="tech-pills">
+                <span class="tech-pill">Python</span>
+              </div>
+            </div>
+
+            <div class="tech-category">
+              <div class="tech-category-name">ML & Data</div>
+              <div class="tech-pills">
+                <span class="tech-pill">Scikit-Learn</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">NumPy</span>
+              </div>
+            </div>
+
+            <div class="tech-category">
+              <div class="tech-category-name">Visualization</div>
+              <div class="tech-pills">
+                <span class="tech-pill">Matplotlib</span>
+                <span class="tech-pill">Seaborn</span>
+              </div>
+            </div>
+
+            <div class="tech-category">
+              <div class="tech-category-name">Concepts Applied</div>
+              <div class="tech-pills">
+                <span class="tech-pill">Data Preprocessing</span>
+                <span class="tech-pill">Feature Engineering</span>
+                <span class="tech-pill">Model Evaluation</span>
+                <span class="tech-pill">Cross-Validation</span>
+                <span class="tech-pill">Classification</span>
+              </div>
+            </div>
+
+            <div class="tech-category">
+              <div class="tech-category-name">Environment & Tools</div>
+              <div class="tech-pills">
+                <span class="tech-pill">Jupyter Notebook</span>
+                <span class="tech-pill">Git</span>
+                <span class="tech-pill">GitHub</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card fade-in" data-tags="data-analysis python">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="card-num">02</div>
+        <div class="card-title-group">
+          <div class="card-title">UCL Data Analysis</div>
+          <div class="card-tags">
+            <span class="card-tag">Data Analysis</span>
+            <span class="card-tag">Python</span>
+            <span class="card-tag">EDA</span>
+            <span class="card-tag">Visualization</span>
+          </div>
+        </div>
+        <div class="card-toggle">+</div>
+      </div>
+      <div class="card-body">
+        <div class="card-body-inner">
+
+          <!-- LEFT -->
+          <div>
+            <div class="status-badge wip">Completed</div>
+
+            <div class="card-stats">
+              <div class="card-stat">
+                <div class="card-stat-num">EDA</div>
+                <div class="card-stat-label">Primary Method</div>
+              </div>
+              <div class="card-stat">
+                <div class="card-stat-num">UCL</div>
+                <div class="card-stat-label">Dataset</div>
+              </div>
+              <div class="card-stat">
+                <div class="card-stat-num">3+</div>
+                <div class="card-stat-label">Visual Insights</div>
+              </div>
+            </div>
+
+            <div class="card-section-label">Project Description</div>
+            <p class="card-desc">
+              Built a comprehensive <strong>data analysis pipeline</strong> using Python to explore 
+              and visualize UCL (UEFA Champions League) datasets. The goal was to uncover meaningful 
+              trends, patterns, and statistical insights from historical match and performance data.
+            </p>
+            <p class="card-desc">
+              The pipeline covered the full data lifecycle — <strong>ingestion, cleaning, transformation, 
+              exploratory analysis, and visualization</strong> — using industry-standard Python libraries. 
+              Findings were presented through rich, annotated charts and summary statistics.
+            </p>
+
+            <div class="card-section-label">Key Highlights</div>
+            <div class="highlight-list">
+              <div class="highlight-item">End-to-end data pipeline from raw CSV ingestion to final visualizations</div>
+              <div class="highlight-item">Data cleaning: handling nulls, duplicates, type casting, outlier detection</div>
+              <div class="highlight-item">Exploratory Data Analysis (EDA) to surface trends and anomalies</div>
+              <div class="highlight-item">Statistical summaries: distributions, correlations, group aggregations</div>
+              <div class="highlight-item">Rich visualization suite — bar, line, heatmap, and scatter plots</div>
+              <div class="highlight-item">Insights on team performance, goal trends, and match outcomes</div>
+            </div>
+
+            <div class="card-links">
+              <a href="https://github.com" target="_blank" class="card-link card-link-primary">GitHub ↗</a>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="tech-stack">
+            <div class="card-section-label">Technical Stack</div>
+
+            <div class="tech-category">
+              <div class="tech-category-name">Language</div>
+              <div class="tech-pills">
+                <span class="tech-pill">Python</span>
+              </div>
+            </div>
+
+            <div class="tech-category">
+              <div class="tech-category-name">Data Processing</div>
+              <div class="tech-pills">
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">NumPy</span>
+              </div>
+            </div>
+
+            <div class="tech-category">
+              <div class="tech-category-name">Visualization</div>
+              <div class="tech-pills">
+                <span class="tech-pill">Matplotlib</span>
+                <span class="tech-pill">Seaborn</span>
+              </div>
+            </div>
+
+            <div class="tech-category">
+              <div class="tech-category-name">Concepts Applied</div>
+              <div class="tech-pills">
+                <span class="tech-pill">EDA</span>
+                <span class="tech-pill">Data Cleaning</span>
+                <span class="tech-pill">Statistical Analysis</span>
+                <span class="tech-pill">Data Visualization</span>
+                <span class="tech-pill">Pattern Recognition</span>
+              </div>
+            </div>
+
+            <div class="tech-category">
+              <div class="tech-category-name">Environment & Tools</div>
+              <div class="tech-pills">
+                <span class="tech-pill">Jupyter Notebook</span>
+                <span class="tech-pill">Git</span>
+                <span class="tech-pill">GitHub</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /projects-list -->
+
+  <div class="no-results" id="noResults">
+    No projects match the selected filter.
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2025 <span>Pallab Banerjee</span> — All rights reserved</div>
+  <div><a href="index.html" style="color:var(--muted);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">← Back to Portfolio</a></div>
+  <div>Kolkata, India <span>●</span> Open to Opportunities</div>
+</footer>
+
+<script src="./js/projects.js"></script>
+</body>
+</html>
