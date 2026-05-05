@@ -242,7 +242,7 @@ font-size: 0.75rem; font-weight: 800;
 color: var(--muted); letter-spacing: 0.1em;
 min-width: 2.5rem;
 }
-.card-title-group {}
+/* .card-title-group {} */
 .card-title {
 font-family: 'Syne', sans-serif;
 font-size: clamp(1.1rem, 2.5vw, 1.5rem);
@@ -337,7 +337,7 @@ border-color: var(--border);
 .card-link-outline:hover { border-color: var(--accent); color: var(--accent); }
 
 /* Right col — tech stack */
-.tech-stack {}
+/* .tech-stack {} */
 .tech-category { margin-bottom: 1.5rem; }
 .tech-category-name {
 font-size: 0.62rem; letter-spacing: 0.15em;

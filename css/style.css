@@ -248,7 +248,7 @@
     grid-template-columns: 1fr 1.3fr;
     gap: 5rem; align-items: start;
   }
-  .about-left {}
+  /* .about-left {} */
   .about-bio {
     font-size: 0.85rem; line-height: 2;
     color: #a0a090; margin-bottom: 2rem;
@@ -277,7 +277,7 @@
     color: var(--accent);
     border: 1px solid rgba(200,240,74,0.2);
   }
-  .about-right {}
+  /* .about-right {} */
   .about-photo {
   width: 150px;
   height: 150px;
@@ -312,7 +312,7 @@
   }
 
   /* SKILLS */
-  #skills {}
+  /* #skills {} */
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -430,7 +430,7 @@
 
 
   /* ACHIEVEMENTS */
-  #achievements {}
+  /* #achievements {} */
   .achievements-grid {
     display: grid; grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -513,7 +513,7 @@
   .exp-desc { font-size: 0.8rem; line-height: 1.85; color: #8a8880; margin-top: 1rem; }
 
   /* CONTACT */
-  #contact {}
+  /* #contact {} */
   .contact-grid {
     display: grid; grid-template-columns: 1fr 1fr;
     gap: 5rem; align-items: start;
