@@ -5,7 +5,7 @@
 --accent: #c8f04a;
 --accent2: #f0c84a;
 --text: #e8e6df;
---muted: #6b6960;
+--muted: #cac5b6;
 --border: #2a2a25;
 --card: #141412;
 }
@@ -161,7 +161,7 @@ letter-spacing: 0.1em;
 
 /* FILTER BAR */
 .filter-bar {
-padding: 1.5rem 3rem;
+padding: 1.5rem 10rem;
 background: var(--bg2);
 border-bottom: 1px solid var(--border);
 display: flex;
